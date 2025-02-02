@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Curriculum Structure</title>
+    <title>Semester Courses</title>
     <style>
         body {
+          
             font-family: Arial, sans-serif;
-            margin: 0px;
+            margin:0px;
             padding: 0px;
-            text-align: center;
+            text-align: center;            
             font-size: 15px;
-            color: black;
+            color:black;
         }
+
         .header {
+           
+           
             text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
         }
-        .content {
-            margin: 20px auto;
-            width: 80%;
-            max-width: 1000px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            border-radius: 8px;
+        .container{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 40px;             
+        }
+ 
+
+        tr:hover {
+            background-color: #ddd;
         }
         table {
             width: 100%;
@@ -37,40 +40,221 @@
             padding: 10px;
             text-align: left;
         }
+
+        .content {
+            background-color: rgba(255, 255, 255,0.9);
+            max-width: 1200px;
+            margin: auto;
+        }
+        .icon {
+            width: 150px;
+            height: 40px;
+            margin-right: 10px;
+            }
+            .menu-items {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .Topbar {
+        position: fixed;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-color: #1c8fa9;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        }
+    
+        .Topbar li {
+            float: left;
+        }
+    
+        .Topbar li a {
+            /* display: inline-block; */
+            color: white;
+            text-align: left;
+            padding: 14px 8px 8px 8px;
+            text-decoration: none;
+            font-weight: bold;       
+            background-color: #1c8fa9;
+            
+        }      
+        .Topbar a:hover {
+            color: #ddd;
+        }
+        .fa-solid {
+                font-size: 20px; /* Adjust the size as needed */
+                margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
+                }
+                .fa-brands{
+                    font-size: 20px; /* Adjust the size as needed */
+                    margin-right: 10px; /* Optional: Adds some spacing between the icon and the text */
+                }
+        h4 a {
+        color: #3f828e;}
+
+    
+        .search-bar {
+            float: left;
+            margin-top: 8px;
+        }
+    
+        .search-form {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .search-form input[type="text"] {
+            padding: 6px;
+            border-radius: 4px;
+            border: none;
+            border: 1px solid black;
+        }
+    
+        .search-form button {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        .h1{
+            background-color: #fff;
+            position: relative;
+            font-size: 30px;
+            color: #3f828e;
+            background-color: rgba(255, 255, 255,0.9);
+            text-align: center;
+            padding: 10px;
+            margin: 58px;
+            font-weight: bold;
+ 
+        }
+   
+        .note{
+            font-size: 20px;
+            color: #3f828e;
+            padding: 10px;
+            text-align: center;
+        
+         list-style-type: none;
+         font-weight: bold;
+        }
+      
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1c8fa9;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            z-index: 1;
+        }
+      
+        .Listlogo{
+            background-color: #fff;
+            margin-top: 90px;
+            width:400px;
+            height:300px;  
+            border-radius: 1000px;    
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);      
+        }
+
     </style>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script src="https://kit.fontawesome.com/0d370ca485.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Curriculum Structure</h1>
+<header>
+        <nav>
+            
+            <ul class="Topbar">
+                <li class="logo-item">
+                    <a href="index.html">
+                        <img src="bmccicon.png" alt="icon" class="icon">
+                    </a>
+                </li>
+                <li class="menu-items">
+                    
+                    <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                    <a href="CourseSearch.php"><i class="fa-brands fa-searchengin"></i>Course Search</a>
+                    <a href="MajorandClassesList.php"><i class="fa-solid fa-list"></i>Major and Classes List</a>
+                    <a href="MajorCoursePlanner.html"><i class="fa-brands fa-golang"></i>Major Course Planner</a>
+                    <a href="piecharts.html"><i class="fa-solid fa-clock"></i>View Enrollment Data</a>
+                </li>
+                <li class="search-bar">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <button type="submit" class="search-button">Go</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <div class="container">
+    <div class="listlogo_background">
+    <img src="listlogo.png" alt="ListLogo" class="Listlogo">
     </div>
-    <div class="content">
-        <h2>Semester-wise Course List</h2>
-        <table>
-            <tr>
-                <th>Major</th>
-                <th>Semester</th>
-                <th>Course Name</th>
-                <th>Credits</th>
-            </tr>
-            <tr><td>Computer Science</td><td>1</td><td>MAT 206.5 Intermediate Algebra and Precalculus</td><td>4</td></tr>
-            <tr><td>Computer Science</td><td>1</td><td>ENG 101 English Composition</td><td>3</td></tr>
-            <tr><td>Computer Science</td><td>1</td><td>CSC 101 Principles in Information Technology and Computation</td><td>3</td></tr>
-            <tr><td>Computer Science</td><td>2</td><td>ENG 201 Introduction to Literature</td><td>3</td></tr>
-            <tr><td>Computer Science</td><td>2</td><td>CSC 111 Introduction to Programming</td><td>4</td></tr>
-            <tr><td>Computer Science</td><td>2</td><td>MAT 301 Analytic Geometry and Calculus I</td><td>4</td></tr>
-            <tr><td>Computer Science</td><td>3</td><td>PHY 215 University Physics I</td><td>4</td></tr>
-            <tr><td>Computer Science</td><td>3</td><td>CSC 211 Advanced Programming Techniques</td><td>3</td></tr>
-            <tr><td>Computer Science</td><td>3</td><td>CSC 231 Discrete Structures and Applications</td><td>4</td></tr>
-            <tr><td>Computer Information Systems</td><td>1</td><td>BUS 104 Introduction to Business</td><td>3</td></tr>
-            <tr><td>Computer Information Systems</td><td>1</td><td>SPE 100 Fundamentals of Public Speaking</td><td>3</td></tr>
-            <tr><td>Computer Information Systems</td><td>1</td><td>ACC 122 Accounting Principles I</td><td>3</td></tr>
-            <tr><td>Computer Information Systems</td><td>2</td><td>ENG 201 Introduction to Literature</td><td>3</td></tr>
-            <tr><td>Computer Information Systems</td><td>2</td><td>AST 110 General Astronomy</td><td>4</td></tr>
-            <tr><td>Computer Network Technology</td><td>1</td><td>ENG 101 English Composition</td><td>3</td></tr>
-            <tr><td>Computer Network Technology</td><td>1</td><td>BUS 104 Introduction to Business</td><td>3</td></tr>
-            <tr><td>Computer Network Technology</td><td>2</td><td>CSC 110 Computer Programming I</td><td>4</td></tr>
-            <tr><td>Computer Network Technology</td><td>2</td><td>CIS 165 Introduction to Operating Systems</td><td>3</td></tr>
-        </table>
+    <h1><i  class="fa-solid fa-list-check"></i>Major Curriculum List(DEMO)</h1> 
+    <table>
+      <tr>
+          <th>Major</th>
+          <th>Semester</th>
+          <th>Course Name</th>
+          <th>Credits</th>
+      </tr>
+      <tr><td>Computer Science</td><td>1</td><td>MAT 206.5 Intermediate Algebra and Precalculus</td><td>4</td></tr>
+      <tr><td>Computer Science</td><td>1</td><td>ENG 101 English Composition</td><td>3</td></tr>
+      <tr><td>Computer Science</td><td>1</td><td>CSC 101 Principles in Information Technology and Computation</td><td>3</td></tr>
+      <tr><td>Computer Science</td><td>2</td><td>ENG 201 Introduction to Literature</td><td>3</td></tr>
+      <tr><td>Computer Science</td><td>2</td><td>CSC 111 Introduction to Programming</td><td>4</td></tr>
+      <tr><td>Computer Science</td><td>2</td><td>MAT 301 Analytic Geometry and Calculus I</td><td>4</td></tr>
+      <tr><td>Computer Science</td><td>3</td><td>PHY 215 University Physics I</td><td>4</td></tr>
+      <tr><td>Computer Science</td><td>3</td><td>CSC 211 Advanced Programming Techniques</td><td>3</td></tr>
+      <tr><td>Computer Science</td><td>3</td><td>CSC 231 Discrete Structures and Applications</td><td>4</td></tr>
+      <tr><td>Computer Science</td><td>4</td><td>CSC 350 Computer Architecture</td><td>3</td></tr>
+      <tr><td>Computer Science</td><td>4</td><td>CSC 450 Operating Systems</td><td>3</td></tr>
+      <tr><td>Computer Science</td><td>4</td><td>CSC 460 Artificial Intelligence</td><td>3</td></tr>
+      <tr><td>Computer Information Systems</td><td>1</td><td>BUS 104 Introduction to Business</td><td>3</td></tr>
+      <tr><td>Computer Information Systems</td><td>1</td><td>SPE 100 Fundamentals of Public Speaking</td><td>3</td></tr>
+      <tr><td>Computer Information Systems</td><td>1</td><td>ACC 122 Accounting Principles I</td><td>3</td></tr>
+      <tr><td>Computer Information Systems</td><td>2</td><td>ENG 201 Introduction to Literature</td><td>3</td></tr>
+      <tr><td>Computer Information Systems</td><td>2</td><td>AST 110 General Astronomy</td><td>4</td></tr>
+      <tr><td>Computer Information Systems</td><td>3</td><td>CIS 395 Database Systems I</td><td>3</td></tr>
+      <tr><td>Computer Information Systems</td><td>3</td><td>CIS 385 Web Programming I</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>1</td><td>ENG 101 English Composition</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>1</td><td>BUS 104 Introduction to Business</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>2</td><td>CSC 110 Computer Programming I</td><td>4</td></tr>
+      <tr><td>Computer Network Technology</td><td>2</td><td>CIS 165 Introduction to Operating Systems</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>3</td><td>CIS 345 Telecommunication Network I</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>3</td><td>CIS 255 Computer Software</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>4</td><td>CIS 450 Cybersecurity</td><td>3</td></tr>
+      <tr><td>Computer Network Technology</td><td>4</td><td>CIS 460 Network Security</td><td>3</td></tr>
+  </table>
+        <div class="content">
+        <footer class="footer">
+        @ Borough of Manhattan Community College | 199 Chambers Street | New York, NY 10007 | Contact Us | Privacy Policy
+    </footer>
+ 
+
     </div>
+</div>
+<h4  >Note: The table above shows each major's for its semester courses that students may take
+    <br>
+    For example: first row first semester in Computer Science might take 5 courses
+    <br>
+    The table shows the four categories:"Individual and Society", "US Experience in Its Diversity", "World Cultures and Global Issues", and "Program Electives" will be displaying 
+            on the page <a href="electives.php"> Elective Courses <br> <br> <br></a>
 </body>
 </html>
